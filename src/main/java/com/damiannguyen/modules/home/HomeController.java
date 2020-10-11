@@ -11,7 +11,12 @@ public class HomeController {
 //    @RequestMapping( method = RequestMethod.GET, path = "/")
     @RequestMapping( method = RequestMethod.GET, path = {"/", "index.html"})
     public String getHome(Model model) {
-        model.addAttribute("name", "Damian");
+        PersonDto person = new PersonDto("Damian", "Nguyen", 27);
+
+        model.addAttribute("name", person.getName());
+        model.addAttribute("surname", person.getSurname());
+        model.addAttribute("age", person.getAge());
+
         return "home";
     }
 }
