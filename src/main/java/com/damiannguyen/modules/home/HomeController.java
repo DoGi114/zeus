@@ -13,9 +13,10 @@ public class HomeController {
     public String getHome(Model model) {
         PersonDto person = new PersonDto("Damian", "Nguyen", 27);
 
-        model.addAttribute("name", person.getName());
-        model.addAttribute("surname", person.getSurname());
-        model.addAttribute("age", person.getAge());
+//        model.addAttribute("name", person.getName());
+//        model.addAttribute("surname", person.getSurname());
+//        model.addAttribute("age", person.getAge());
+        model.addAttribute("person", person);
 
         return "home";
     }

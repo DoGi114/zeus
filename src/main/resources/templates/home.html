@@ -6,8 +6,11 @@
 </head>
 <body>
     <h1>Hello world!</h1>
-    <p>Name: <span th:text="${name}"></span></p>
-    <p>Surname: <span th:text="${surname}"></span></p>
-    <p>Age: <span th:text="${age}"></span></p>
+<!--    <p>Name: <span th:text="${name}"></span></p>-->
+<!--    <p>Surname: <span th:text="${surname}"></span></p>-->
+<!--    <p>Age: <span th:text="${age}"></span></p>-->
+    <p>Name: <span th:text="${person.getName()}"></span></p>
+    <p>Surname: <span th:text="${person.getSurname()}"></span></p>
+    <p>Age: <span th:text="${person.getAge()}"></span></p>
 </body>
 </html>
